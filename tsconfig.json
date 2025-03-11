@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "ES2016", // o superior (ES6, ES2020, etc.)
+    "module": "CommonJS",
+    "strict": true
+  }
+}
