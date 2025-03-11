@@ -22,16 +22,15 @@ class Patovica<
   hasPermission(user: { role: Role }, permission: Permissions): boolean {
     return (
       this.ROLES[user.role].includes(permission) ||
-      this.ROLES[user.role].includes("all_permissions" as Permissions)
+      this.ROLES[user.role].includes(ALL)
     );
   }
 }
 
-// Uso de la clase
 const patovica = new Patovica({
-  ADMIN: [ALL] as const,
-  TURISMO: ["view:comments"] as const,
-});
+  ADMIN: [ALL],
+  TURISMO: ["view:comments"],
+} as const);
 
 const user = { id: 1, role: "TURISMO" as Role };
 
