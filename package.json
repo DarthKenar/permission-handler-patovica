@@ -1,8 +1,13 @@
 {
-  "dependencies": {
-    "typescript": "^5.8.2"
+  "name": "mi-paquete",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc", 
+    "prepare": "npm run build" 
   },
   "devDependencies": {
+    "typescript": "^5.8.2",
     "@types/node": "^22.13.10"
   }
 }
