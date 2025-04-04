@@ -1,14 +1,14 @@
-type Role = keyof typeof ROLES;
+export type Role = keyof typeof ROLES;
 
-type PatovicaPermissions = (typeof ROLES)[Role][number];
+export type PatovicaPermissions = (typeof ROLES)[Role][number];
 
-const ALL = "all_permissions";
+export const ALL = "all_permissions";
 
-const ROLES = {
+export const ROLES = {
   ADMIN: [ALL],
 } as const;
 
-class Patovica<
+export class Patovica<
   T extends Record<string, readonly string[]>,
   Role extends keyof T = keyof T,
   Permissions extends T[Role][number] = T[Role][number]

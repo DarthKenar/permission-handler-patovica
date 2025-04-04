@@ -1,10 +1,30 @@
 {
-  "name": "mi-paquete",
+  "name": "permission-handler-patovica",
   "version": "1.0.0",
+  "description": "Simple yet powerful role-based permission handler for TypeScript applications",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc", 
-    "prepare": "npm run build" 
+    "prepare": "npm run build",
+    "test": "echo \"No tests yet\"" 
+  },
+  "keywords": [
+    "permissions",
+    "authorization",
+    "roles",
+    "typescript",
+    "rbac",
+    "access-control"
+  ],
+  "author": "DarthKenar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarthKenar/permission-handler-patovica"
   },
   "devDependencies": {
     "typescript": "^5.8.2",
