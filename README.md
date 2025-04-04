@@ -21,6 +21,8 @@ npm install permission-handler-patovica
 
 ## 📋 Usage
 
+### [Youtube Video Example](https://www.youtube.com/watch?v=_rv1AOWV9rM)
+
 ### Basic Example
 
 ```typescript

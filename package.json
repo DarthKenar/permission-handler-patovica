@@ -1,6 +1,6 @@
 {
   "name": "permission-handler-patovica",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple yet powerful role-based permission handler for TypeScript applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -26,12 +26,3 @@ export class Patovica<
     );
   }
 }
-
-// const patovica = new Patovica({
-//   ADMIN: [ALL],
-//   TURISMO: ["view:comments"],
-// } as const);
-
-// const user = { id: 1, role: "TURISMO" as Role };
-
-// console.log(patovica.hasPermission(user, 'view:comments')); // true
