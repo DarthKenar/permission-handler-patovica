@@ -8,9 +8,18 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc", 
+    "clean": "rimraf dist",
+    "build": "tsc",
     "prepare": "npm run build",
-    "test": "echo \"No tests yet\"" 
+    "prepack": "npm run clean && npm run build",
+    "check:pack": "npm pack --dry-run",
+    "pack": "npm pack",
+    "publish": "npm publish",
+    "publish:dry": "npm publish --dry-run",
+    "release:patch": "npm version patch && git push --follow-tags && npm run publish",
+    "release:minor": "npm version minor && git push --follow-tags && npm run publish",
+    "release:major": "npm version major && git push --follow-tags && npm run publish",
+    "test": "echo \"No tests yet\""
   },
   "keywords": [
     "permissions",
@@ -28,6 +37,7 @@
   },
   "devDependencies": {
     "typescript": "^5.8.2",
-    "@types/node": "^22.13.10"
+    "@types/node": "^22.13.10",
+    "rimraf": "^5.0.5"
   }
 }

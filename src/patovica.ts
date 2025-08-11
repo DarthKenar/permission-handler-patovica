@@ -13,7 +13,7 @@ export class Patovica<
   Role extends keyof T = keyof T,
   Permissions extends T[Role][number] = T[Role][number]
 > {
-  private ROLES: T;
+  ROLES: T;
 
   constructor(config: T) {
     this.ROLES = config;
