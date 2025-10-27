@@ -8,6 +8,7 @@ export declare class Patovica<T extends Record<string, readonly string[]>, Role 
     ROLES: T;
     constructor(config: T);
     hasPermission(user: {
-        role: Role;
+        role?: Role;
+        roles?: Role[];
     }, permission: Permissions): boolean;
 }
